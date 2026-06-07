@@ -1,10 +1,10 @@
 export const menuData = [
     // ===================== RICE (1–12) =====================
     { id: 1, name: "Jollof Rice with Chicken", category: "Rice", price: 2500, image: "https://images.pexels.com/photos/616354/pexels-photo-616354.jpeg", description: "Smoky Nigerian jollof rice with fried chicken" },
-    { id: 2, name: "Ofada Rice & Ayamase", category: "Rice", price: 3000, image: "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg", description: "Local rice with spicy green pepper sauce" },
+    //{ id: 2, name: "Ofada Rice & Ayamase", category: "Rice", price: 3000, image: "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg", description: "Local rice with spicy green pepper sauce" },
     { id: 3, name: "Fried Rice", category: "Rice", price: 2800, image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg", description: "Vegetable fried rice with chicken" },
     { id: 59, name: "Chapman", category: "Drinks", price: 1200, image: "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg", description: "Cocktail drink" },
-    { id: 60, name: "Zobo Drink", category: "Drinks", price: 800, image: "https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg", description: "Hibiscus drink" },
+    //{ id: 60, name: "Zobo Drink", category: "Drinks", price: 800, image: "https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg", description: "Hibiscus drink" },
     { id: 6, name: "Native Rice", category: "Rice", price: 3200, image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg", description: "Traditional palm oil rice" },
     //{ id: 7, name: "Jollof Spaghetti", category: "Rice", price: 2200, image: "https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg", description: "Spaghetti cooked in jollof sauce" },
     //{ id: 13, name: "Egusi Soup & Pounded Yam", category: "Swallow", price: 3500, image: "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg", description: "Melon seed soup with assorted meat" },

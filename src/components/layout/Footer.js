@@ -36,9 +36,9 @@ const Footer = () =>
                 {/* SOCIAL */ }
                 <div className="footer-social">
                     <h4>Follow Us</h4>
-                    <a href="#">Instagram</a>
-                    <a href="#">WhatsApp</a>
-                    <a href="#">Facebook</a>
+                    <p>Instagram</p>
+                    <p >WhatsApp</p>
+                    <p>Facebook</p>
                 </div>
 
             </div>

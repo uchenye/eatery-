@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useCart } from "../context/CartContext";
 import "../styles/checkout.css";
 import Toast from "../components/common/Toast";
-import { sendToWhatsApp } from "../utils/whatsappOrder";
 import { useNavigate } from "react-router-dom";
 import { useOrders } from "../context/OderContext";
 
@@ -44,32 +43,32 @@ const Checkout = () =>
         setCard( { ...card, [ e.target.name ]: e.target.value } );
     };
 
-    const formatOrderMessage = ( order ) =>
-    {
-        let itemsText = order.items
-            .map(
-                ( i ) =>
-                    `• ${ i.name } x${ i.quantity } = ₦${ i.price * i.quantity }`
-            )
-            .join( "\n" );
+    //    const formatOrderMessage = ( order ) =>
+    //    {
+    //        let itemsText = order.items
+    //            .map(
+    //                ( i ) =>
+    //                    `• ${ i.name } x${ i.quantity } = ₦${ i.price * i.quantity }`
+    //            )
+    //            .join( "\n" );
 
-        return `
-🍽️ *NEW ORDER - DOOMUMMY KITCHEN*
+    //        return `
+    //🍽️ *NEW ORDER - DOOMUMMY KITCHEN*
 
-👤 Name: ${ order.customer.name }
-📞 Phone: ${ order.customer.phone }
-📍 Address: ${ order.customer.address }
-🚚 Type: ${ order.customer.type }
+    //👤 Name: ${ order.customer.name }
+    //📞 Phone: ${ order.customer.phone }
+    //📍 Address: ${ order.customer.address }
+    //🚚 Type: ${ order.customer.type }
 
-🧾 *Items:*
-${ itemsText }
+    //🧾 *Items:*
+    //${ itemsText }
 
-💰 *Total:* ₦${ order.total }
-💳 Payment: ${ order.paymentMethod }
+    //💰 *Total:* ₦${ order.total }
+    //💳 Payment: ${ order.paymentMethod }
 
-⏱️ ETA: ${ eta }
-        `;
-    };
+    //⏱️ ETA: ${ eta }
+    //        `;
+    //    };
 
     const fakePaymentFlow = ( order ) =>
     {

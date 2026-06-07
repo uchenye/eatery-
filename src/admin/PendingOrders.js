@@ -1,4 +1,4 @@
-import { saveOrders, getOrders } from "../utils/orderKey";
+import { saveOrders } from "../utils/orderKey";
 
 const PendingOrders = ( { orders } ) =>
 {

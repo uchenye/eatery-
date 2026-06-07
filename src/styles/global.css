@@ -1,0 +1,74 @@
+:root {
+  --primary: #D32F2F;
+  --secondary: #1E1E1E;
+  --background: #F7F7F7;
+  --text: #333333;
+  --gray: #F7F7F7;
+  --light-gray: #FFFFFF;
+  --accent: #FFC107;
+
+
+  --success: #28a745;
+  --danger: #dc3545;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background: var(--light-gray);
+  color: var(--text);
+}
+
+.card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.app-content {
+    flex: 1;
+    height: 100vh;
+}

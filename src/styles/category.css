@@ -1,0 +1,27 @@
+.categories {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scrollbar-width: none;
+}
+
+.categories::-webkit-scrollbar {
+  display: none;
+}
+
+.categories button {
+  flex: 0 0 auto;
+  padding: 8px 14px;
+  border: none;
+  background: #eee;
+  border-radius: 20px;
+  font-size: 13px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.categories .active {
+  background: var(--primary);
+  color: white;
+}

@@ -1,0 +1,159 @@
+.checkout-page {
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+.summary-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+text-align: left;
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.summary h3{
+  text-align: left;
+  margin-bottom: 5px;
+}
+.summary-left h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.summary-left p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.summary-right {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+/* FORM LAYOUT */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* PAYMENT */
+.payment-method {
+  margin-top: 10px;
+}
+
+/* BUTTON */
+.checkout-form button {
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+/* SUCCESS */
+.success-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding: 20px;
+}
+
+.success-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* EMPTY STATE */
+.empty-checkout {
+  text-align: center;
+  padding: 50px 20px;
+  color: var(--text);
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+
+}
+
+.payment-method h4{
+  margin-bottom: 10px;
+}
+
+.checkout-label{
+  margin-right: 15px;
+}
+.checkout-label input{
+  margin-right: 4px;
+}
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .checkout-page {
+    padding: 15px;
+  }
+
+  .summary {
+    font-size: 14px;
+  }
+
+  .checkout-form button {
+    width: 100%;
+  }
+}

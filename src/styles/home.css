@@ -1,0 +1,158 @@
+.home {
+  padding-bottom: 40px;
+}
+
+/* HERO */
+.hero {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background: var(--accent);
+  border: none;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* FEATURED */
+.featured {
+  padding: 20px;
+}
+
+.featured h2 {
+  margin-bottom: 15px;
+}
+
+.meal-list {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.meal-card {
+  min-width: 200px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.meal-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.meal-card h3 {
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+.meal-card p {
+  font-weight: bold;
+}
+
+.meal-card button {
+  margin-top: 8px;
+  width: 100%;
+  padding: 8px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* HOW IT WORKS */
+.how {
+  padding: 20px;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.step {
+  width: 30%;
+}
+
+.step span {
+  display: block;
+  background: var(--primary);
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  line-height: 30px;
+}
+
+.homepage-btn{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TRUST */
+.trust {
+  background: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+}
+.meal-scroll {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* hide scrollbar (clean UI like UberEats) */
+.meal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.meal-scroll {
+  scrollbar-width: none;
+}
+
+/* make each card snap nicely */
+.meal-scroll .menu-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 180px; /* adjust for mobile feel */
+}
+.featured {
+  position: relative;
+}
+
+.featured::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 40px;
+  background: linear-gradient(to left, #f7f7f7, transparent);
+  pointer-events: none;
+}

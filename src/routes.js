@@ -17,7 +17,7 @@ const AppRoutes = () =>
     return (
         <Routes>
             {/* CUSTOMER ROUTES */ }
-            <Route path="/welcome" element={ <Welcome /> } />
+            <Route path="/" element={ <Welcome /> } />
             <Route path="/homepage" element={ <Home /> } />
             <Route path="/menu" element={ <Menu /> } />
             <Route path="/cart" element={ <Cart /> } />
